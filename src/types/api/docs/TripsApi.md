@@ -257,7 +257,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new TripsApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 
 const { status, data } = await apiInstance.tripsControllerFindOne(
     id
@@ -268,7 +268,7 @@ const { status, data } = await apiInstance.tripsControllerFindOne(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type
@@ -307,7 +307,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new TripsApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 
 const { status, data } = await apiInstance.tripsControllerRemove(
     id
@@ -318,7 +318,7 @@ const { status, data } = await apiInstance.tripsControllerRemove(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type
@@ -358,7 +358,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new TripsApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 let updateTripDto: UpdateTripDto; //
 
 const { status, data } = await apiInstance.tripsControllerUpdate(
@@ -372,7 +372,7 @@ const { status, data } = await apiInstance.tripsControllerUpdate(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **updateTripDto** | **UpdateTripDto**|  | |
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type

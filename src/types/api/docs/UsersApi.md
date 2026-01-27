@@ -147,7 +147,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new UsersApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 
 const { status, data } = await apiInstance.usersControllerFindOne(
     id
@@ -158,7 +158,7 @@ const { status, data } = await apiInstance.usersControllerFindOne(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type
@@ -197,7 +197,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new UsersApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 
 const { status, data } = await apiInstance.usersControllerRemove(
     id
@@ -208,7 +208,7 @@ const { status, data } = await apiInstance.usersControllerRemove(
 
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type
@@ -247,7 +247,7 @@ import {
 const configuration = new Configuration();
 const apiInstance = new UsersApi(configuration);
 
-let id: string; // (default to undefined)
+let id: number; // (default to undefined)
 let body: object; //
 
 const { status, data } = await apiInstance.usersControllerUpdate(
@@ -261,7 +261,7 @@ const { status, data } = await apiInstance.usersControllerUpdate(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **body** | **object**|  | |
-| **id** | [**string**] |  | defaults to undefined|
+| **id** | [**number**] |  | defaults to undefined|
 
 
 ### Return type

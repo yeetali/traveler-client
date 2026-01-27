@@ -26,3 +26,13 @@ export const registerSchema: z.ZodType<
   });
 
 export type RegisterSchema = z.infer<typeof registerSchema>;
+
+export const profileSchema: z.ZodType<Partial<CreateUserDto> & { id: number }> =
+  z.object({
+    id: z.number({ message: "ID is required" }),
+    firstName: z.string().min(2, "First name must be at least 2 characters"),
+    lastName: z.string().min(2, "Last name must be at least 2 characters"),
+    email: z.email("Invalid email address"),
+  });
+
+export type ProfileSchema = z.infer<typeof profileSchema>;
