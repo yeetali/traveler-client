@@ -26,7 +26,7 @@ export default function AppLayout({
   return (
       <div className="flex">
         <SideBar />
-        <div className="my-16 mx-6 flex ">
+        <div className="my-16 mx-6 flex w-full">
         {children}
         </div>
         <BottomBar />
