@@ -187,6 +187,7 @@ const configuration = new Configuration();
 const apiInstance = new TripsApi(configuration);
 
 let orderBy: 'title' | 'startDate' | 'endDate' | 'createdAt' | 'updatedAt'; // (optional) (default to undefined)
+let user: number; // (optional) (default to undefined)
 let page: number; // (optional) (default to undefined)
 let limit: number; // (optional) (default to undefined)
 let order: 'ASC' | 'DESC'; // (optional) (default to undefined)
@@ -197,6 +198,7 @@ let endDate: string; // (optional) (default to undefined)
 
 const { status, data } = await apiInstance.tripsControllerFindAll(
     orderBy,
+    user,
     page,
     limit,
     order,
@@ -212,6 +214,7 @@ const { status, data } = await apiInstance.tripsControllerFindAll(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **orderBy** | [**&#39;title&#39; | &#39;startDate&#39; | &#39;endDate&#39; | &#39;createdAt&#39; | &#39;updatedAt&#39;**]**Array<&#39;title&#39; &#124; &#39;startDate&#39; &#124; &#39;endDate&#39; &#124; &#39;createdAt&#39; &#124; &#39;updatedAt&#39;>** |  | (optional) defaults to undefined|
+| **user** | [**number**] |  | (optional) defaults to undefined|
 | **page** | [**number**] |  | (optional) defaults to undefined|
 | **limit** | [**number**] |  | (optional) defaults to undefined|
 | **order** | [**&#39;ASC&#39; | &#39;DESC&#39;**]**Array<&#39;ASC&#39; &#124; &#39;DESC&#39;>** |  | (optional) defaults to undefined|
