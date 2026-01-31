@@ -28,7 +28,7 @@ const CreateDestination = () => {
             <input type="text" placeholder='country' {...register("country")} />
             {errors.country && <p className='text-red-500'>{errors.country.message}</p>}
             <input type="file" multiple={false} {...register("file")} />
-            {errors.file && <p className='text-red-500'>{errors.file?.message}</p>}
+            {errors.file && typeof errors.file.message === "string" && <p className='text-red-500'>{errors.file?.message}</p>}
 
             <button className='bg-blue-500 text-white p-2 rounded-md' type='submit'>Submit</button>
             {errors.root && <p className='text-red-500'>{errors.root?.message}</p>}
